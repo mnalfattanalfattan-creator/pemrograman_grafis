@@ -1,0 +1,235 @@
+Penjelasan Program Java – Variabel & Operasi
+
+Program ini menjelaskan berbagai jenis variabel, konstanta, operasi aritmatika, dan type casting dalam Java.
+
+1. Judul Program
+System.out.println("=== Program Belajar Variabel JAVA ===");
+
+
+Menampilkan judul program di layar.
+
+2. Bagian Variabel Primitive
+
+Ditandai dengan:
+
+System.out.println("1.Variabel Primitive");
+
+Variabel primitive = tipe data dasar di Java
+
+Contohnya:
+
+a. Integer (bilangan bulat)
+int umur = 20;
+byte nilaiUjian = 85;
+short JumlahSiswa = 120;
+long populasiKota = 5000000L;
+
+
+int : bilangan bulat ukuran sedang
+
+byte : ukuran paling kecil (-128 s/d 127)
+
+short : lebih besar dari byte
+
+long : angka besar, wajib pakai huruf L di akhir
+
+Program menampilkan nilai-nilai tersebut.
+
+b. Pecahan (bilangan desimal)
+float tinggiBadan = 175.5f;
+double hargaBarang = 125000.75;
+
+
+float harus pakai f
+
+double lebih presisi untuk desimal
+
+c. Karakter & Boolean
+char grade = 'A';
+boolean isLulus = true;
+
+
+char hanya 1 karakter, pakai tanda kutip ' '
+
+boolean hanya dua nilai: true atau false
+
+3. Variabel Reference
+
+Ditandai dengan:
+
+System.out.println("2. Variabel Reference");
+
+
+Variabel reference adalah tipe data yang menyimpan alamat ke objek, bukan nilai langsung.
+
+String nama = "Budi Santoso";
+String alamat = "Jl. Merdeka No. 123";
+
+
+String bukan primitive, tapi class/objek.
+
+4. Konstanta (FINAL)
+final double FI = 3.14159;
+final String NEGARA = "Indonesia";
+
+
+Keyword final berarti variabel tidak bisa diubah.
+
+Cocok untuk nilai yang tetap, seperti phi atau nama negara.
+
+5. Operasi Dengan Variabel
+
+Ditandai dengan:
+
+System.out.println("4.OPERASI DENGAN VARIABEL");
+
+
+Mendefinisikan dua variabel:
+
+int a = 10;
+int b = 5;
+
+
+Lalu melakukan operasi aritmatika:
+
+Operasi	Code	Hasil
+Penjumlahan	a + b	15
+Pengurangan	a - b	5
+Perkalian	a * b	50
+Pembagian	a / b	2
+Modulus (sisa bagi)	a % b	0
+
+Semua hasil ditampilkan ke layar.
+
+6. Type Casting (Mengubah Tipe Data)
+int angkaInt = 100;
+double angkaDouble = angkaInt;
+int angkaKembali = (int) angkaDouble;
+
+a. Implicit Casting (otomatis)
+double angkaDouble = angkaInt;
+
+
+int → double
+Naik level → otomatis tidak perlu tanda khusus.
+
+b. Explicit Casting (manual)
+int angkaKembali = (int) angkaDouble;
+
+
+double → int
+Turun level → harus pakai (int) karena bisa kehilangan angka desimal.
+
+📌 Kesimpulan
+
+Program ini menunjukkan:
+
+✔ Jenis-jenis variabel primitive
+✔ Variabel reference (String)
+✔ Penggunaan final sebagai konstanta
+✔ Operasi aritmatika pada variabel
+✔ Type casting (konversi tipe data)
+
+Kalau mau, saya bisa sederhanakan, atau bikin diagram alur, atau bikin versi catatan sekolah.
+Mau dibuatkan? 😊
+
+You said:
+fungsinya
+ChatGPT said:
+
+Berikut fungsi dari setiap bagian kode yang kamu buat, dijelaskan secara singkat tapi jelas 👇
+
+🔧 Fungsi Program Secara Keseluruhan
+
+Program ini berfungsi menjelaskan dan menampilkan contoh penggunaan variabel di Java, meliputi:
+
+Variabel primitive
+
+Variabel reference
+
+Konstanta
+
+Operasi matematika dengan variabel
+
+Type casting
+
+Program ini cocok sebagai latihan dasar Java.
+
+📌 Fungsi Setiap Bagian Kode
+1. Menampilkan Judul Program
+System.out.println("=== Program Belajar Variabel JAVA ===");
+
+
+➡ Fungsi: Menampilkan teks judul agar pengguna tahu isi program.
+
+2. Variabel Primitive
+int umur = 20;
+byte nilaiUjian = 85;
+short JumlahSiswa = 120;
+long populasiKota = 5000000L;
+
+
+➡ Fungsi: Menyimpan data angka bilangan bulat dengan berbagai ukuran.
+
+float tinggiBadan = 175.5f;
+double hargaBarang = 125000.75;
+
+
+➡ Fungsi: Menyimpan data desimal.
+
+char grade = 'A';
+boolean isLulus = true;
+
+
+➡ Fungsi:
+
+char ➝ menyimpan 1 karakter
+
+boolean ➝ menyimpan nilai benar/salah
+
+3. Variabel Reference
+String nama = "Budi Santoso";
+String alamat ="Jl. Merdeka No. 123";
+
+
+➡ Fungsi: Menyimpan teks (kata atau kalimat).
+Tipe String adalah objek, bukan primitive.
+
+4. Konstanta (final)
+final double FI = 3.14159;
+final String NEGARA = "Indonesia";
+
+
+➡ Fungsi: Menyimpan nilai yang tidak boleh diubah.
+final membuat variabel menjadi konstanta.
+
+5. Operasi Aritmatika
+int penjumlahan = a + b;
+int pengurangan = a - b;
+...
+
+
+➡ Fungsi: Melakukan perhitungan matematika dasar
+( + , - , * , / , % ) menggunakan variabel.
+
+6. Type Casting
+double angkaDouble = angkaInt;
+
+
+➡ Fungsi: Mengubah int menjadi double secara otomatis (implicit casting).
+
+int angkaKembali = (int) angkaDouble;
+
+
+➡ Fungsi: Mengubah double menjadi int dengan paksa (explicit casting).
+Desimal akan hilang karena diubah menjadi bilangan bulat.
+
+🎯 Inti Fungsi Program
+
+Program ini digunakan untuk belajar konsep variabel di Java, termasuk:
+
+✔ Menyimpan data dengan tipe berbeda
+✔ Memahami ukuran dan fungsi tipe data
+✔ Menggunakan konstanta
+✔ Melakukan operasi matematika
+✔ Mengubah (casting) tipe data
